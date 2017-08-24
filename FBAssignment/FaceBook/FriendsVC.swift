@@ -9,8 +9,13 @@
 import UIKit
 import FBSDKCoreKit
 
-class FriendsVC: UIViewController {
+class FriendsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var tableData : [UIImage] = []
+    var dataURLS : [String] = []
+    var nameData : [String] = []
+    
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,26 +35,51 @@ class FriendsVC: UIViewController {
                         let name = friend["name"]
                         let pictureObj = friend["picture"] as! [String:Any]
                         let data = pictureObj["data"] as! [String:Any]
-                        let picture = data["url"]
-                        print(name)
-//                        print(pictureObj)
-                        print(picture)
-                        print()
-                        
-                        
+                        let imageURL = data["url"]
+                        print(imageURL)
+                        self.dataURLS.append(imageURL! as! String)
+                        self.nameData.append(name! as! String)
                     }
 //                    print(result!)
+                    print(self.dataURLS.count)
+                    
+                    DispatchQueue.global(qos: .background).async {
+                        var bTask : UIBackgroundTaskIdentifier = UIBackgroundTaskInvalid
+                        bTask = UIApplication.shared.beginBackgroundTask(expirationHandler: {
+                            UIApplication.shared.endBackgroundTask(bTask)
+                            bTask = UIBackgroundTaskInvalid
+                        })
+                        for i in 0  ..< self.dataURLS.count{
+                            let backgroundTimerRemaining = UIApplication.shared.backgroundTimeRemaining
+                            print(backgroundTimerRemaining)
+                            if(backgroundTimerRemaining > 100){
+                                let imageUrl = self.dataURLS[i]
+                                let image = UIImage(data: try! Data(contentsOf: URL(string: imageUrl)!))
+                                self.tableData.append(image!)
+                                DispatchQueue.main.sync {
+                                    let rowIndex = i; //your row index where you want to add cell
+                                    let sectionIndex = 0;//your section index
+                                    let iPath : IndexPath = IndexPath(row: rowIndex, section: sectionIndex)
+                                    self.tableView.insertRows(at: [iPath], with: UITableViewRowAnimation.left)
+                                }
+                            }else{
+                                print("no time")
+                            }
+                        }
+                    }
+                    
+                    
                 }
             })
-			
+            
 		}else{
 			print("user_freinds access not granted")
 			
 		}
 		
-		
-	
 	}
+    
+    
 	@IBAction func closeButtonTouched(_ sender: AnyObject) {
 		
 		self.dismiss(animated: true, completion: nil)
@@ -61,15 +91,30 @@ class FriendsVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
-    */
-
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tableData.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50.0
+    }
+    
+    
+    let cellId = "cellId1"
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellId)
+        if(cell == nil){
+            cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: cellId)
+        }
+        print(tableData[indexPath.row])
+        cell?.imageView?.image = tableData[indexPath.row]
+        cell?.textLabel?.text = nameData[indexPath.row]
+        return cell!
+    }
 }

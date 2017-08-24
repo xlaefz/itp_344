@@ -1,0 +1,47 @@
+{
+"stations": [
+			 {
+			 "reg_price": 3.65,
+			 "lat": 34.033220,
+			 "lng": -118.292166,
+			 "station": "76",
+			 "notes": "Opens at 9:00 AM"
+			 },
+			 {
+			 "reg_price": 3.55,
+			 "lat": 34.018139,
+			 "lng": -118.292037,
+			 "station": "ARCO",
+			 "notes": "Opens at 9:00 AM"
+			 },
+			 {
+			 "reg_price": 3.45,
+			 "lat": 34.027742,
+			 "lng": -118.276073,
+			 "station": "Mobil",
+			 "notes": "Opens at 8:00 AM"
+			 },
+			 {
+			 "reg_price": 3.75,
+			 "lat": 34.010597,
+			 "lng": -118.282510,
+			 "station": "Chevron",
+			 "notes": "Opens at 8:00 AM"
+			 },
+			 {
+			 "reg_price": 3.75,
+			 "lat": 34.034251,
+			 "lng": -118.271438,
+			 "station": "Chevron",
+			 "notes": "Opens at 7:00 AM"
+			 },
+			 {
+			 "reg_price": 3.25,
+			 "lat": 34.010597,
+			 "lng": -118.291737,
+			 "station": "Vermont Oil",
+			 "notes": "Opens at 7:00 AM"
+			 },
+			 
+    ]
+}

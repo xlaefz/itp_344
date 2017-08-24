@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88E91D0C1EAEF54D00402CEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E91D0B1EAEF54D00402CEC /* AppDelegate.swift */; };
+		88E91D0E1EAEF54D00402CEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E91D0D1EAEF54D00402CEC /* ViewController.swift */; };
+		88E91D111EAEF54D00402CEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E91D0F1EAEF54D00402CEC /* Main.storyboard */; };
+		88E91D141EAEF54D00402CEC /* BestGasPrice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88E91D121EAEF54D00402CEC /* BestGasPrice.xcdatamodeld */; };
+		88E91D161EAEF54D00402CEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E91D151EAEF54D00402CEC /* Assets.xcassets */; };
+		88E91D191EAEF54D00402CEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E91D171EAEF54D00402CEC /* LaunchScreen.storyboard */; };
+		88E91D241EAEF54D00402CEC /* BestGasPriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E91D231EAEF54D00402CEC /* BestGasPriceTests.swift */; };
+		88E91D2F1EAEF54D00402CEC /* BestGasPriceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E91D2E1EAEF54D00402CEC /* BestGasPriceUITests.swift */; };
+		88E91D411EAEF5A000402CEC /* MapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E91D401EAEF5A000402CEC /* MapItem.swift */; };
+		88E91D431EAEF5B400402CEC /* MyPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E91D421EAEF5B400402CEC /* MyPinView.swift */; };
+		88E91D451EAEF5CF00402CEC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E91D441EAEF5CF00402CEC /* DataManager.swift */; };
+		88E91D481EAEF5FB00402CEC /* customPin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E91D471EAEF5FB00402CEC /* customPin@3x.png */; };
+		88E91D4A1EAEF60100402CEC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 88E91D491EAEF60100402CEC /* data.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88E91D201EAEF54D00402CEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88E91D001EAEF54D00402CEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E91D071EAEF54D00402CEC;
+			remoteInfo = BestGasPrice;
+		};
+		88E91D2B1EAEF54D00402CEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88E91D001EAEF54D00402CEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E91D071EAEF54D00402CEC;
+			remoteInfo = BestGasPrice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88E91D081EAEF54D00402CEC /* BestGasPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestGasPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E91D0B1EAEF54D00402CEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88E91D0D1EAEF54D00402CEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88E91D101EAEF54D00402CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88E91D131EAEF54D00402CEC /* BestGasPrice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BestGasPrice.xcdatamodel; sourceTree = "<group>"; };
+		88E91D151EAEF54D00402CEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88E91D181EAEF54D00402CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88E91D1A1EAEF54D00402CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E91D1F1EAEF54D00402CEC /* BestGasPriceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestGasPriceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E91D231EAEF54D00402CEC /* BestGasPriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestGasPriceTests.swift; sourceTree = "<group>"; };
+		88E91D251EAEF54D00402CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E91D2A1EAEF54D00402CEC /* BestGasPriceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestGasPriceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E91D2E1EAEF54D00402CEC /* BestGasPriceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestGasPriceUITests.swift; sourceTree = "<group>"; };
+		88E91D301EAEF54D00402CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E91D401EAEF5A000402CEC /* MapItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapItem.swift; sourceTree = "<group>"; };
+		88E91D421EAEF5B400402CEC /* MyPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPinView.swift; sourceTree = "<group>"; };
+		88E91D441EAEF5CF00402CEC /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		88E91D471EAEF5FB00402CEC /* customPin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "customPin@3x.png"; sourceTree = "<group>"; };
+		88E91D491EAEF60100402CEC /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88E91D051EAEF54D00402CEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E91D1C1EAEF54D00402CEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E91D271EAEF54D00402CEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88E91CFF1EAEF54D00402CEC = {
+			isa = PBXGroup;
+			children = (
+				88E91D0A1EAEF54D00402CEC /* BestGasPrice */,
+				88E91D221EAEF54D00402CEC /* BestGasPriceTests */,
+				88E91D2D1EAEF54D00402CEC /* BestGasPriceUITests */,
+				88E91D091EAEF54D00402CEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88E91D091EAEF54D00402CEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88E91D081EAEF54D00402CEC /* BestGasPrice.app */,
+				88E91D1F1EAEF54D00402CEC /* BestGasPriceTests.xctest */,
+				88E91D2A1EAEF54D00402CEC /* BestGasPriceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88E91D0A1EAEF54D00402CEC /* BestGasPrice */ = {
+			isa = PBXGroup;
+			children = (
+				88E91D3F1EAEF58D00402CEC /* Views */,
+				88E91D3E1EAEF58500402CEC /* Models */,
+				88E91D3D1EAEF58100402CEC /* Resources */,
+				88E91D3C1EAEF57800402CEC /* Managers */,
+				88E91D0B1EAEF54D00402CEC /* AppDelegate.swift */,
+				88E91D0D1EAEF54D00402CEC /* ViewController.swift */,
+				88E91D0F1EAEF54D00402CEC /* Main.storyboard */,
+				88E91D151EAEF54D00402CEC /* Assets.xcassets */,
+				88E91D171EAEF54D00402CEC /* LaunchScreen.storyboard */,
+				88E91D1A1EAEF54D00402CEC /* Info.plist */,
+				88E91D121EAEF54D00402CEC /* BestGasPrice.xcdatamodeld */,
+			);
+			path = BestGasPrice;
+			sourceTree = "<group>";
+		};
+		88E91D221EAEF54D00402CEC /* BestGasPriceTests */ = {
+			isa = PBXGroup;
+			children = (
+				88E91D231EAEF54D00402CEC /* BestGasPriceTests.swift */,
+				88E91D251EAEF54D00402CEC /* Info.plist */,
+			);
+			path = BestGasPriceTests;
+			sourceTree = "<group>";
+		};
+		88E91D2D1EAEF54D00402CEC /* BestGasPriceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88E91D2E1EAEF54D00402CEC /* BestGasPriceUITests.swift */,
+				88E91D301EAEF54D00402CEC /* Info.plist */,
+			);
+			path = BestGasPriceUITests;
+			sourceTree = "<group>";
+		};
+		88E91D3C1EAEF57800402CEC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				88E91D441EAEF5CF00402CEC /* DataManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		88E91D3D1EAEF58100402CEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				88E91D491EAEF60100402CEC /* data.json */,
+				88E91D461EAEF5E700402CEC /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		88E91D3E1EAEF58500402CEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				88E91D401EAEF5A000402CEC /* MapItem.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		88E91D3F1EAEF58D00402CEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88E91D421EAEF5B400402CEC /* MyPinView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		88E91D461EAEF5E700402CEC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				88E91D471EAEF5FB00402CEC /* customPin@3x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88E91D071EAEF54D00402CEC /* BestGasPrice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88E91D331EAEF54D00402CEC /* Build configuration list for PBXNativeTarget "BestGasPrice" */;
+			buildPhases = (
+				88E91D041EAEF54D00402CEC /* Sources */,
+				88E91D051EAEF54D00402CEC /* Frameworks */,
+				88E91D061EAEF54D00402CEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BestGasPrice;
+			productName = BestGasPrice;
+			productReference = 88E91D081EAEF54D00402CEC /* BestGasPrice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88E91D1E1EAEF54D00402CEC /* BestGasPriceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88E91D361EAEF54D00402CEC /* Build configuration list for PBXNativeTarget "BestGasPriceTests" */;
+			buildPhases = (
+				88E91D1B1EAEF54D00402CEC /* Sources */,
+				88E91D1C1EAEF54D00402CEC /* Frameworks */,
+				88E91D1D1EAEF54D00402CEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88E91D211EAEF54D00402CEC /* PBXTargetDependency */,
+			);
+			name = BestGasPriceTests;
+			productName = BestGasPriceTests;
+			productReference = 88E91D1F1EAEF54D00402CEC /* BestGasPriceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88E91D291EAEF54D00402CEC /* BestGasPriceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88E91D391EAEF54D00402CEC /* Build configuration list for PBXNativeTarget "BestGasPriceUITests" */;
+			buildPhases = (
+				88E91D261EAEF54D00402CEC /* Sources */,
+				88E91D271EAEF54D00402CEC /* Frameworks */,
+				88E91D281EAEF54D00402CEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88E91D2C1EAEF54D00402CEC /* PBXTargetDependency */,
+			);
+			name = BestGasPriceUITests;
+			productName = BestGasPriceUITests;
+			productReference = 88E91D2A1EAEF54D00402CEC /* BestGasPriceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88E91D001EAEF54D00402CEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Jason Zheng";
+				TargetAttributes = {
+					88E91D071EAEF54D00402CEC = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = V5WFPWBDLH;
+						ProvisioningStyle = Automatic;
+					};
+					88E91D1E1EAEF54D00402CEC = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = V5WFPWBDLH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88E91D071EAEF54D00402CEC;
+					};
+					88E91D291EAEF54D00402CEC = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = V5WFPWBDLH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88E91D071EAEF54D00402CEC;
+					};
+				};
+			};
+			buildConfigurationList = 88E91D031EAEF54D00402CEC /* Build configuration list for PBXProject "BestGasPrice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88E91CFF1EAEF54D00402CEC;
+			productRefGroup = 88E91D091EAEF54D00402CEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88E91D071EAEF54D00402CEC /* BestGasPrice */,
+				88E91D1E1EAEF54D00402CEC /* BestGasPriceTests */,
+				88E91D291EAEF54D00402CEC /* BestGasPriceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88E91D061EAEF54D00402CEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E91D481EAEF5FB00402CEC /* customPin@3x.png in Resources */,
+				88E91D191EAEF54D00402CEC /* LaunchScreen.storyboard in Resources */,
+				88E91D161EAEF54D00402CEC /* Assets.xcassets in Resources */,
+				88E91D4A1EAEF60100402CEC /* data.json in Resources */,
+				88E91D111EAEF54D00402CEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E91D1D1EAEF54D00402CEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E91D281EAEF54D00402CEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88E91D041EAEF54D00402CEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E91D0E1EAEF54D00402CEC /* ViewController.swift in Sources */,
+				88E91D451EAEF5CF00402CEC /* DataManager.swift in Sources */,
+				88E91D411EAEF5A000402CEC /* MapItem.swift in Sources */,
+				88E91D0C1EAEF54D00402CEC /* AppDelegate.swift in Sources */,
+				88E91D141EAEF54D00402CEC /* BestGasPrice.xcdatamodeld in Sources */,
+				88E91D431EAEF5B400402CEC /* MyPinView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E91D1B1EAEF54D00402CEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E91D241EAEF54D00402CEC /* BestGasPriceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E91D261EAEF54D00402CEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E91D2F1EAEF54D00402CEC /* BestGasPriceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88E91D211EAEF54D00402CEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88E91D071EAEF54D00402CEC /* BestGasPrice */;
+			targetProxy = 88E91D201EAEF54D00402CEC /* PBXContainerItemProxy */;
+		};
+		88E91D2C1EAEF54D00402CEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88E91D071EAEF54D00402CEC /* BestGasPrice */;
+			targetProxy = 88E91D2B1EAEF54D00402CEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88E91D0F1EAEF54D00402CEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88E91D101EAEF54D00402CEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88E91D171EAEF54D00402CEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88E91D181EAEF54D00402CEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88E91D311EAEF54D00402CEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88E91D321EAEF54D00402CEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88E91D341EAEF54D00402CEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V5WFPWBDLH;
+				INFOPLIST_FILE = BestGasPrice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JZ.BestGasPrice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		88E91D351EAEF54D00402CEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V5WFPWBDLH;
+				INFOPLIST_FILE = BestGasPrice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JZ.BestGasPrice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		88E91D371EAEF54D00402CEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V5WFPWBDLH;
+				INFOPLIST_FILE = BestGasPriceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JZ.BestGasPriceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BestGasPrice.app/BestGasPrice";
+			};
+			name = Debug;
+		};
+		88E91D381EAEF54D00402CEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V5WFPWBDLH;
+				INFOPLIST_FILE = BestGasPriceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JZ.BestGasPriceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BestGasPrice.app/BestGasPrice";
+			};
+			name = Release;
+		};
+		88E91D3A1EAEF54D00402CEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V5WFPWBDLH;
+				INFOPLIST_FILE = BestGasPriceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JZ.BestGasPriceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BestGasPrice;
+			};
+			name = Debug;
+		};
+		88E91D3B1EAEF54D00402CEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V5WFPWBDLH;
+				INFOPLIST_FILE = BestGasPriceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JZ.BestGasPriceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BestGasPrice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88E91D031EAEF54D00402CEC /* Build configuration list for PBXProject "BestGasPrice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E91D311EAEF54D00402CEC /* Debug */,
+				88E91D321EAEF54D00402CEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88E91D331EAEF54D00402CEC /* Build configuration list for PBXNativeTarget "BestGasPrice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E91D341EAEF54D00402CEC /* Debug */,
+				88E91D351EAEF54D00402CEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88E91D361EAEF54D00402CEC /* Build configuration list for PBXNativeTarget "BestGasPriceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E91D371EAEF54D00402CEC /* Debug */,
+				88E91D381EAEF54D00402CEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88E91D391EAEF54D00402CEC /* Build configuration list for PBXNativeTarget "BestGasPriceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E91D3A1EAEF54D00402CEC /* Debug */,
+				88E91D3B1EAEF54D00402CEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		88E91D121EAEF54D00402CEC /* BestGasPrice.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				88E91D131EAEF54D00402CEC /* BestGasPrice.xcdatamodel */,
+			);
+			currentVersion = 88E91D131EAEF54D00402CEC /* BestGasPrice.xcdatamodel */;
+			path = BestGasPrice.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 88E91D001EAEF54D00402CEC /* Project object */;
+}
